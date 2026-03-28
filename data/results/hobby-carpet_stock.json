@@ -1,0 +1,26 @@
+[
+  {
+    "driver": "Daniel",
+    "carModel": "Rima Raptor Evo",
+    "bestLaptime": 8.425,
+    "threeConsecutiveLaps": 26.459,
+    "updatedBestLaptime": "2026-03-27",
+    "updatedThreeConsecutiveLaps": "2026-03-28"
+  },
+  {
+    "driver": "Max",
+    "carModel": "Kyosho MR-04",
+    "bestLaptime": 8.612,
+    "threeConsecutiveLaps": null,
+    "updatedBestLaptime": "2026-03-25",
+    "updatedThreeConsecutiveLaps": null
+  },
+  {
+    "driver": "Sarah",
+    "carModel": "GL Racing GLA",
+    "bestLaptime": 8.731,
+    "threeConsecutiveLaps": 26.891,
+    "updatedBestLaptime": "2026-03-24",
+    "updatedThreeConsecutiveLaps": "2026-03-24"
+  }
+]

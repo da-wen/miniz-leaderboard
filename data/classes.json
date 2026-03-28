@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Stock",
+    "slug": "stock",
+    "rules": "Stock motors only. No modifications to the chassis allowed. Pinion gear must be stock. Tires must be from the approved list.",
+    "defaultSort": "bestLaptime"
+  },
+  {
+    "name": "Modified",
+    "slug": "modified",
+    "rules": "Any motor allowed. Chassis modifications permitted. Custom pinion gears allowed. Open tire choice.",
+    "defaultSort": "threeConsecutiveLaps"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "driver": "Sarah",
+    "carModel": "GL Racing GLA",
+    "bestLaptime": 9.102,
+    "threeConsecutiveLaps": 27.891,
+    "updatedBestLaptime": "2026-03-20",
+    "updatedThreeConsecutiveLaps": "2026-03-20"
+  },
+  {
+    "driver": "Max",
+    "carModel": "Kyosho MR-04",
+    "bestLaptime": 9.341,
+    "threeConsecutiveLaps": null,
+    "updatedBestLaptime": "2026-03-18",
+    "updatedThreeConsecutiveLaps": null
+  }
+]
