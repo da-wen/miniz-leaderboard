@@ -1,5 +1,13 @@
 [
   {
+    "name": "Fusselflitzer März 2026",
+    "slug": "fusselflitzer-2026-03",
+    "classes": [
+      { "classSlug": "stock", "defaultSort": "threeConsecutiveLaps" },
+      { "classSlug": "modified", "defaultSort": "threeConsecutiveLaps" }
+    ]
+  },
+  {
     "name": "Hobby Carpet",
     "slug": "hobby-carpet",
     "classes": [
