@@ -3,17 +3,17 @@
     "name": "Stock",
     "slug": "stock",
     "rules": {
-      "en": "Stock motors only. No modifications to the chassis allowed. Pinion gear must be stock. Tires must be from the approved list.",
-      "de": "<h4>Fahrzeug</h4><b>Chassis:</b> frei <br/> <b>Tuning:</b> frei <br/> <b>Gewicht:</b> mindesten 170gr. <br/>  <b>Radstand:</b> 98mm <br/> <b>Karosserie:</b> ABS, kein Lexan <br/> <br/> <h4>Antrieb</h4> <b>Motor:</b> 2500kv <br/> <b>Motorritzel:</b> 12 <br/> <b>Hauptzahnrad:</b> 53 <br/> <br/>  <h4>Reifen</h4> <b>Felgenbreite vorne:</b> 8.5mm <br/> <b>Felgenbreite hinten:</b> 11mm <br/> <b>Reifendurchmesser hinten:</b> 25.5mm <br/>"
+      "en": "<h4>Vehicle</h4><b>Chassis:</b> open <br/> <b>Tuning:</b> open <br/> <b>Weight:</b> minimum 170g <br/><b>Wheelbase:</b> 98mm <br/> <b>Body:</b> ABS, no Lexan <br/> <br/> <h4>Drivetrain</h4> <b>Motor:</b> 2500kv <br/><b>Motor pinion:</b> 12 teeth <br/> <b>Main gear:</b> 53 teeth <br/> <br/> <h4>Tires</h4> <b>Rim width front:</b> 8.5mm <br/><b>Rim width rear:</b> 11mm <br/> <b>Tire diameter rear:</b> 25.5mm <br/> <h4>Battery</h4> <b>Type:</b> LiPo <br/> <b>Cells:</b> 2 <br/> <b>Voltage:</b> 7.4V <br/>",
+      "de": "<h4>Fahrzeug</h4><b>Chassis:</b> frei <br/> <b>Tuning:</b> frei <br/> <b>Gewicht:</b> mindesten 170gr. <br/>  <b>Radstand:</b> 98mm <br/> <b>Karosserie:</b> ABS, kein Lexan <br/> <br/> <h4>Antrieb</h4> <b>Motor:</b> 2500kv <br/> <b>Motorritzel:</b> 12 Zähne <br/> <b>Hauptzahnrad:</b> 53 Zähne <br/> <br/>  <h4>Reifen</h4> <b>Felgenbreite vorne:</b> 8.5mm <br/> <b>Felgenbreite hinten:</b> 11mm <br/> <b>Reifendurchmesser hinten:</b> 25.5mm <br/> <h4>Akku</h4> <b>Typ:</b> LiPo <br/> <b>Zellenanzahl:</b> 2 <br/> <b>Spannung:</b> 7.4V <br/>"
     },
-    "defaultSort": "bestLaptime"
+    "defaultSort": "threeConsecutiveLaps"
   },
   {
-    "name": "Modified",
+    "name": "Modified/Open",
     "slug": "modified",
     "rules": {
-      "en": "Any motor allowed. Chassis modifications permitted. Custom pinion gears allowed. Open tire choice.",
-      "de": "Jeder Motor erlaubt. Chassis-Modifikationen gestattet. Eigene Ritzel erlaubt. Freie Reifenwahl."
+      "en": "<h4>Vehicle</h4><b>Chassis:</b> free <br/> <b>Tuning:</b> free <br/> <b>Weight:</b> free <br/>  <b>Wheelbase:</b> free <br/> <b>Body:</b> free <br/> <br/> <h4>Drivetrain</h4> <b>Motor:</b> free <br/> <b>Motor pinion:</b> free <br/> <b>Spur gear:</b> free <br/> <br/>  <h4>Tires</h4> <b>Front rim width:</b> free <br/> <b>Rear rim width:</b> free <br/> <b>Rear tire diameter:</b> free <br/> <h4>Battery</h4> <b>Number of cells:</b> 2 <br/> <b>Voltage:</b> 7.4V <br/>",
+      "de": "<h4>Fahrzeug</h4><b>Chassis:</b> frei <br/> <b>Tuning:</b> frei <br/> <b>Gewicht:</b> frei <br/>  <b>Radstand:</b> frei <br/> <b>Karosserie:</b> frei <br/> <br/> <h4>Antrieb</h4> <b>Motor:</b> frei <br/> <b>Motorritzel:</b> frei <br/> <b>Hauptzahnrad:</b> frei <br/> <br/>  <h4>Reifen</h4> <b>Felgenbreite vorne:</b> frei <br/> <b>Felgenbreite hinten:</b> frei <br/> <b>Reifendurchmesser hinten:</b> frei <br/> <h4>Akku</h4> <b>Zellenanzahl:</b> 2 <br/> <b>Spannung:</b> 7.4V <br/>"
     },
     "defaultSort": "threeConsecutiveLaps"
   }
