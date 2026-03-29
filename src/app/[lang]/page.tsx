@@ -1,10 +1,14 @@
 import { redirect } from "next/navigation";
 import { getTracks } from "@/lib/data";
-import { i18n } from "@/lib/i18n/config";
 
-export default function HomePage() {
+export default async function LangHomePage({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}) {
+  const { lang } = await params;
   const tracks = getTracks();
   const firstTrack = tracks[0];
   const firstClass = firstTrack.classes[0].classSlug;
-  redirect(`/${i18n.defaultLocale}/tracks/${firstTrack.slug}/${firstClass}`);
+  redirect(`/${lang}/tracks/${firstTrack.slug}/${firstClass}`);
 }

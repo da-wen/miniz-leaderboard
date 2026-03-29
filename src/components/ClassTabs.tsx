@@ -7,16 +7,17 @@ import type { RacingClass } from "@/types";
 interface ClassTabsProps {
   trackSlug: string;
   classes: RacingClass[];
+  lang: string;
 }
 
-export function ClassTabs({ trackSlug, classes }: ClassTabsProps) {
+export function ClassTabs({ trackSlug, classes, lang }: ClassTabsProps) {
   const pathname = usePathname();
 
   return (
     <div className="overflow-x-auto">
       <div className="flex border-b border-slate-800 min-w-max">
         {classes.map((cls) => {
-          const href = `/tracks/${trackSlug}/${cls.slug}`;
+          const href = `/${lang}/tracks/${trackSlug}/${cls.slug}`;
           const isActive = pathname === href || pathname.startsWith(`${href}/`);
 
           return (

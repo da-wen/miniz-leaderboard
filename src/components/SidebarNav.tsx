@@ -6,17 +6,18 @@ import type { Track } from "@/types";
 
 interface SidebarNavProps {
   tracks: Track[];
+  lang: string;
 }
 
-export function SidebarNav({ tracks }: SidebarNavProps) {
+export function SidebarNav({ tracks, lang }: SidebarNavProps) {
   const pathname = usePathname();
 
   return (
     <ul className="space-y-1">
       {tracks.map((track) => {
         const firstClass = track.classes[0].classSlug;
-        const href = `/tracks/${track.slug}/${firstClass}`;
-        const isActive = pathname.startsWith(`/tracks/${track.slug}`);
+        const href = `/${lang}/tracks/${track.slug}/${firstClass}`;
+        const isActive = pathname.startsWith(`/${lang}/tracks/${track.slug}`);
 
         return (
           <li key={track.slug}>

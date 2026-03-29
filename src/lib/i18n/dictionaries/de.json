@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "title": "Mini-Z Bestenliste",
+    "description": "Mini-Z RC Auto Rundenzeiten Bestenliste"
+  },
+  "nav": {
+    "tracks": "Strecken",
+    "navigation": "Navigation",
+    "leaderboard": "Bestenliste"
+  },
+  "leaderboard": {
+    "rank": "#",
+    "driver": "Fahrer",
+    "carModel": "Automodell",
+    "bestLaptime": "Beste Rundenzeit",
+    "threeConsecutiveLaps": "3 Aufeinanderfolgende Runden",
+    "updated": "Aktualisiert",
+    "noEntries": "Noch keine Rundenzeiten eingetragen."
+  },
+  "rules": {
+    "label": "{className} Regeln"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Seite nicht gefunden.",
+    "backHome": "Zurück zur Startseite"
+  },
+  "language": {
+    "switch": "Sprache",
+    "en": "English",
+    "de": "Deutsch"
+  }
+}

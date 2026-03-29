@@ -10,13 +10,13 @@ export async function generateStaticParams() {
 export default async function TrackPage({
   params,
 }: {
-  params: Promise<{ trackSlug: string }>;
+  params: Promise<{ lang: string; trackSlug: string }>;
 }) {
-  const { trackSlug } = await params;
+  const { lang, trackSlug } = await params;
   const track = getTrackBySlug(trackSlug);
 
   if (!track) notFound();
 
   const firstClass = track.classes[0].classSlug;
-  redirect(`/tracks/${trackSlug}/${firstClass}`);
+  redirect(`/${lang}/tracks/${trackSlug}/${firstClass}`);
 }

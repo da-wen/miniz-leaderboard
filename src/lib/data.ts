@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import type { Track, RacingClass, LapTimeEntry, SortField } from "@/types";
+import { i18n } from "@/lib/i18n/config";
 
 const dataDir = path.join(process.cwd(), "data");
 
@@ -35,4 +36,14 @@ export function getDefaultSort(trackSlug: string, classSlug: string): SortField 
   const racingClass = getClassBySlug(classSlug);
 
   return trackClass?.defaultSort ?? racingClass?.defaultSort ?? "bestLaptime";
+}
+
+export function getLocalizedRules(classSlug: string, lang: string): string {
+  const racingClass = getClassBySlug(classSlug);
+  if (!racingClass) return "";
+
+  const rules = racingClass.rules;
+  return rules[lang as keyof typeof rules]
+    ?? rules[i18n.defaultLocale as keyof typeof rules]
+    ?? "";
 }

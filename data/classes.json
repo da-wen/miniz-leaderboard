@@ -2,13 +2,19 @@
   {
     "name": "Stock",
     "slug": "stock",
-    "rules": "Stock motors only. No modifications to the chassis allowed. Pinion gear must be stock. Tires must be from the approved list.",
+    "rules": {
+      "en": "Stock motors only. No modifications to the chassis allowed. Pinion gear must be stock. Tires must be from the approved list.",
+      "de": "Nur Serienmotoren. Keine Modifikationen am Chassis erlaubt. Ritzel muss original sein. Reifen müssen von der genehmigten Liste sein."
+    },
     "defaultSort": "bestLaptime"
   },
   {
     "name": "Modified",
     "slug": "modified",
-    "rules": "Any motor allowed. Chassis modifications permitted. Custom pinion gears allowed. Open tire choice.",
+    "rules": {
+      "en": "Any motor allowed. Chassis modifications permitted. Custom pinion gears allowed. Open tire choice.",
+      "de": "Jeder Motor erlaubt. Chassis-Modifikationen gestattet. Eigene Ritzel erlaubt. Freie Reifenwahl."
+    },
     "defaultSort": "threeConsecutiveLaps"
   }
 ]

@@ -1,9 +1,13 @@
+import type { Locale } from "@/lib/i18n/config";
+
 export type SortField = "bestLaptime" | "threeConsecutiveLaps";
+
+export type LocalizedText = Partial<Record<Locale, string>>;
 
 export interface RacingClass {
   name: string;
   slug: string;
-  rules: string;
+  rules: LocalizedText;
   defaultSort: SortField;
 }
 

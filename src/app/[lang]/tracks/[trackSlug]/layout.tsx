@@ -23,9 +23,9 @@ export default async function TrackLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ trackSlug: string }>;
+  params: Promise<{ lang: string; trackSlug: string }>;
 }) {
-  const { trackSlug } = await params;
+  const { lang, trackSlug } = await params;
   const track = getTrackBySlug(trackSlug);
 
   if (!track) notFound();
@@ -38,7 +38,7 @@ export default async function TrackLayout({
   return (
     <div className="p-6 lg:p-8">
       <h1 className="text-2xl font-bold mb-6 text-slate-50">{track.name}</h1>
-      <ClassTabs trackSlug={trackSlug} classes={trackClasses} />
+      <ClassTabs trackSlug={trackSlug} classes={trackClasses} lang={lang} />
       <div className="mt-6">{children}</div>
     </div>
   );

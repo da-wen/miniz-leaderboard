@@ -3,19 +3,25 @@
 import { useState, useMemo } from "react";
 import { ArrowUp, ArrowDown } from "lucide-react";
 import type { LapTimeEntry, SortField } from "@/types";
+import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { LapTime } from "./LapTime";
 
 interface LeaderboardTableProps {
   entries: LapTimeEntry[];
   defaultSort: SortField;
+  translations: Dictionary["leaderboard"];
+  lang: string;
 }
 
 const MEDALS = ["🥇", "🥈", "🥉"];
 
-function formatDate(dateStr: string | null): string {
+function formatDate(dateStr: string | null, lang: string): string {
   if (!dateStr) return "";
   const date = new Date(dateStr);
-  return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
+  return date.toLocaleDateString(lang === "de" ? "de-DE" : "en-US", {
+    month: "short",
+    day: "numeric",
+  });
 }
 
 function getMostRecentDate(entry: LapTimeEntry): string | null {
@@ -26,7 +32,7 @@ function getMostRecentDate(entry: LapTimeEntry): string | null {
   return dates.sort().at(-1) ?? null;
 }
 
-export function LeaderboardTable({ entries, defaultSort }: LeaderboardTableProps) {
+export function LeaderboardTable({ entries, defaultSort, translations, lang }: LeaderboardTableProps) {
   const [sortField, setSortField] = useState<SortField>(defaultSort);
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("asc");
 
@@ -62,7 +68,7 @@ export function LeaderboardTable({ entries, defaultSort }: LeaderboardTableProps
   if (entries.length === 0) {
     return (
       <p className="text-slate-400 text-sm py-8 text-center">
-        No lap times recorded yet.
+        {translations.noEntries}
       </p>
     );
   }
@@ -73,30 +79,30 @@ export function LeaderboardTable({ entries, defaultSort }: LeaderboardTableProps
         <thead>
           <tr className="border-b border-slate-800 bg-slate-950 sticky top-0">
             <th className="px-4 py-3 text-left text-xs font-medium uppercase tracking-wider text-slate-400 w-12">
-              #
+              {translations.rank}
             </th>
             <th className="px-4 py-3 text-left text-xs font-medium uppercase tracking-wider text-slate-400 sticky left-0 bg-slate-950">
-              Driver
+              {translations.driver}
             </th>
             <th className="px-4 py-3 text-left text-xs font-medium uppercase tracking-wider text-slate-400">
-              Car Model
+              {translations.carModel}
             </th>
             <th
               className="px-4 py-3 text-left text-xs font-medium uppercase tracking-wider text-slate-400 cursor-pointer hover:text-slate-200 select-none whitespace-nowrap"
               onClick={() => handleSort("bestLaptime")}
             >
-              Best Laptime
+              {translations.bestLaptime}
               <SortIcon field="bestLaptime" />
             </th>
             <th
               className="px-4 py-3 text-left text-xs font-medium uppercase tracking-wider text-slate-400 cursor-pointer hover:text-slate-200 select-none whitespace-nowrap"
               onClick={() => handleSort("threeConsecutiveLaps")}
             >
-              3 Consecutive Laps
+              {translations.threeConsecutiveLaps}
               <SortIcon field="threeConsecutiveLaps" />
             </th>
             <th className="px-4 py-3 text-left text-xs font-medium uppercase tracking-wider text-slate-400">
-              Updated
+              {translations.updated}
             </th>
           </tr>
         </thead>
@@ -124,7 +130,7 @@ export function LeaderboardTable({ entries, defaultSort }: LeaderboardTableProps
                 <LapTime time={entry.threeConsecutiveLaps} />
               </td>
               <td className="px-4 py-3 text-xs text-slate-500">
-                {formatDate(getMostRecentDate(entry))}
+                {formatDate(getMostRecentDate(entry), lang)}
               </td>
             </tr>
           ))}

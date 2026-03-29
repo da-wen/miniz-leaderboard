@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "title": "Mini-Z Leaderboard",
+    "description": "Mini-Z RC car racing lap time leaderboard"
+  },
+  "nav": {
+    "tracks": "Tracks",
+    "navigation": "Navigation",
+    "leaderboard": "Leaderboard"
+  },
+  "leaderboard": {
+    "rank": "#",
+    "driver": "Driver",
+    "carModel": "Car Model",
+    "bestLaptime": "Best Laptime",
+    "threeConsecutiveLaps": "3 Consecutive Laps",
+    "updated": "Updated",
+    "noEntries": "No lap times recorded yet."
+  },
+  "rules": {
+    "label": "{className} Rules"
+  },
+  "notFound": {
+    "title": "404",
+    "message": "Page not found.",
+    "backHome": "Back to home"
+  },
+  "language": {
+    "switch": "Language",
+    "en": "English",
+    "de": "Deutsch"
+  }
+}

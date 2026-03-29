@@ -4,13 +4,16 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import type { Track } from "@/types";
+import type { Dictionary } from "@/lib/i18n/dictionaries";
 import { Sidebar } from "./Sidebar";
 
 interface MobileNavProps {
   tracks: Track[];
+  lang: string;
+  dict: Dictionary;
 }
 
-export function MobileNav({ tracks }: MobileNavProps) {
+export function MobileNav({ tracks, lang, dict }: MobileNavProps) {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
@@ -31,7 +34,7 @@ export function MobileNav({ tracks }: MobileNavProps) {
         </button>
         <div className="flex items-center gap-2">
           <span>🏁</span>
-          <span className="text-sm font-bold text-slate-50">Mini-Z Leaderboard</span>
+          <span className="text-sm font-bold text-slate-50">Mini-Z {dict.nav.leaderboard}</span>
         </div>
       </div>
 
@@ -50,7 +53,7 @@ export function MobileNav({ tracks }: MobileNavProps) {
         }`}
       >
         <div className="flex items-center justify-between px-4 py-3 border-b border-slate-800">
-          <span className="text-sm font-medium text-slate-300">Navigation</span>
+          <span className="text-sm font-medium text-slate-300">{dict.nav.navigation}</span>
           <button
             onClick={() => setIsOpen(false)}
             className="p-1 text-slate-400 hover:text-white"
@@ -59,7 +62,7 @@ export function MobileNav({ tracks }: MobileNavProps) {
             <X className="h-4 w-4" />
           </button>
         </div>
-        <Sidebar tracks={tracks} />
+        <Sidebar tracks={tracks} lang={lang} dict={dict} />
       </div>
 
       {/* Spacer for fixed top bar */}
