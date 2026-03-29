@@ -4,7 +4,7 @@
     "slug": "stock",
     "rules": {
       "en": "Stock motors only. No modifications to the chassis allowed. Pinion gear must be stock. Tires must be from the approved list.",
-      "de": "Nur Serienmotoren. Keine Modifikationen am Chassis erlaubt. Ritzel muss original sein. Reifen müssen von der genehmigten Liste sein."
+      "de": "Motor: 2500kv<br/>Motorritzel: 12<br/>Hauptzahnrad: 53"
     },
     "defaultSort": "bestLaptime"
   },
