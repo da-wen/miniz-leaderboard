@@ -97,15 +97,29 @@ Edit the appropriate file in `data/results/`:
 1. Add the class to `data/classes.json`:
    ```json
    {
-     "name": "Open",
+     "name": { "en": "Open", "de": "Offen" },
      "slug": "open",
-     "rules": "All modifications allowed. No restrictions.",
+     "rules": { "en": "All modifications allowed.", "de": "Alle Modifikationen erlaubt." },
      "defaultSort": "bestLaptime"
    }
    ```
 
 2. Assign it to tracks in `data/tracks.json`
 3. Create the corresponding results files
+
+### Rules Formatting
+
+The `rules` field supports a subset of HTML for richer formatting:
+
+```json
+"rules": {
+  "en": "Stock class rules:<br/><ul><li>Stock motor only</li><li>No body modifications</li></ul>"
+}
+```
+
+Supported tags: `b`, `i`, `em`, `strong`, `u`, `s`, `p`, `br`, `hr`, `h3`, `h4`, `ul`, `ol`, `li`, `a`, `span`, `code`, `table`, `thead`, `tbody`, `tr`, `th`, `td`
+
+Plain text rules continue to work without any changes.
 
 ### Sort Configuration
 
@@ -132,7 +146,7 @@ See [deployment documentation](docs/deployment.md) for details.
 
 - [Next.js](https://nextjs.org/) — React framework (static export)
 - [TypeScript](https://www.typescriptlang.org/) — Type safety
-- [Tailwind CSS](https://tailwindcss.com/) — Styling
+- [Tailwind CSS](https://tailwindcss.com/) — Styling (with @tailwindcss/typography)
 - [Lucide React](https://lucide.dev/) — Icons
 - [GitHub Pages](https://pages.github.com/) — Hosting
 

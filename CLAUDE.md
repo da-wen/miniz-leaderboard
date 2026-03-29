@@ -17,7 +17,7 @@ npx serve out     # Test static build locally
 
 ## Tech Stack
 
-Next.js 16 (App Router, static export) · React 19 · TypeScript · Tailwind CSS 4 · GitHub Pages
+Next.js 16 (App Router, static export) · React 19 · TypeScript · Tailwind CSS 4 · @tailwindcss/typography · GitHub Pages
 
 ## Architecture
 
@@ -27,13 +27,15 @@ Next.js 16 (App Router, static export) · React 19 · TypeScript · Tailwind CSS
 
 **Data flow:** JSON files in `data/` → `src/lib/data.ts` loaders → page components → client components for interactivity (sorting, navigation).
 
+**HTML in rules:** The `rules` field in `classes.json` supports a subset of HTML tags (headings, lists, links, tables, inline formatting). `RulesAccordion` sanitizes via `isomorphic-dompurify` before rendering with `dangerouslySetInnerHTML`. Plain text rules continue to work as-is.
+
 **Sort priority:** Track-class override (`tracks.json`) > class default (`classes.json`) > `bestLaptime`.
 
 **Responsive layout:** Desktop uses a fixed left sidebar; mobile uses a hamburger drawer. Breakpoint at `lg`.
 
 ## Data Schema
 
-- `data/classes.json` — racing class definitions (name, slug, rules, defaultSort)
+- `data/classes.json` — racing class definitions (name, slug, rules, defaultSort); `rules` supports HTML subset
 - `data/tracks.json` — track definitions with assigned classes (supports per-track sort overrides)
 - `data/results/{trackSlug}_{classSlug}.json` — lap time entries (driver, carModel, bestLaptime, threeConsecutiveLaps, update dates)
 
@@ -46,3 +48,4 @@ GitHub Actions workflow (`.github/workflows/deploy.yml`) handles build + deploy 
 - `next.config.ts`: `output: "export"`, `images.unoptimized: true`
 - `tsconfig.json`: path alias `@/*` → `src/*`, strict mode
 - Components use `"use client"` directive for interactive features (sorting, nav toggling)
+- `globals.css`: `@plugin "@tailwindcss/typography"` enables prose styling in `RulesAccordion`
