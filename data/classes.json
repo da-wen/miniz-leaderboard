@@ -4,7 +4,7 @@
     "slug": "stock",
     "rules": {
       "en": "Stock motors only. No modifications to the chassis allowed. Pinion gear must be stock. Tires must be from the approved list.",
-      "de": "Motor: 2500kv<br/>Motorritzel: 12<br/>Hauptzahnrad: 53"
+      "de": "<h4>Fahrzeug</h4><b>Chassis:</b> frei <br/> <b>Tuning:</b> frei <br/> <b>Gewicht:</b> mindesten 170gr. <br/>  <b>Radstand:</b> 98mm <br/> <b>Karosserie:</b> ABS, kein Lexan <br/> <br/> <h4>Antrieb</h4> <b>Motor:</b> 2500kv <br/> <b>Motorritzel:</b> 12 <br/> <b>Hauptzahnrad:</b> 53 <br/> <br/>  <h4>Reifen</h4> <b>Felgenbreite vorne:</b> 8.5mm <br/> <b>Felgenbreite hinten:</b> 11mm <br/> <b>Reifendurchmesser hinten:</b> 25.5mm <br/>"
     },
     "defaultSort": "bestLaptime"
   },

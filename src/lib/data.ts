@@ -3,6 +3,12 @@ import path from "path";
 import type { Track, RacingClass, LapTimeEntry, SortField } from "@/types";
 import { i18n } from "@/lib/i18n/config";
 
+export interface ImprintData {
+  name: string;
+  address: string[];
+  email: string;
+}
+
 const dataDir = path.join(process.cwd(), "data");
 
 export function getTracks(): Track[] {
@@ -46,4 +52,9 @@ export function getLocalizedRules(classSlug: string, lang: string): string {
   return rules[lang as keyof typeof rules]
     ?? rules[i18n.defaultLocale as keyof typeof rules]
     ?? "";
+}
+
+export function getImprintData(): ImprintData {
+  const raw = fs.readFileSync(path.join(dataDir, "imprint.json"), "utf-8");
+  return JSON.parse(raw);
 }

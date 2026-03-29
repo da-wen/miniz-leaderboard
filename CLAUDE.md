@@ -23,7 +23,7 @@ Next.js 16 (App Router, static export) · React 19 · TypeScript · Tailwind CSS
 
 **Static Generation (SSG):** All pages are pre-rendered at build time. `generateStaticParams()` in `src/app/tracks/[trackSlug]/[classSlug]/page.tsx` generates all route combinations. Data is loaded from the filesystem via `src/lib/data.ts` using Node.js `fs` — this works because Next.js builds server-side.
 
-**Routing:** `/ → /tracks/[trackSlug]/[classSlug]`. Home page redirects to the first track. Each track has class tabs for different racing categories.
+**Routing:** `/ → /[lang]/tracks/[trackSlug]/[classSlug]`. Home page redirects to the first track. Each track has class tabs for different racing categories. `/[lang]/impressum` serves the bilingual imprint/legal notice page.
 
 **Data flow:** JSON files in `data/` → `src/lib/data.ts` loaders → page components → client components for interactivity (sorting, navigation).
 
@@ -33,11 +33,14 @@ Next.js 16 (App Router, static export) · React 19 · TypeScript · Tailwind CSS
 
 **Responsive layout:** Desktop uses a fixed left sidebar; mobile uses a hamburger drawer. Breakpoint at `lg`.
 
+**Footer:** Server component (`src/components/Footer.tsx`) rendered inside `<main>` in `[lang]/layout.tsx`. Shows copyright year and an "Impressum"/"Legal Notice" link to the imprint page.
+
 ## Data Schema
 
 - `data/classes.json` — racing class definitions (name, slug, rules, defaultSort); `rules` supports HTML subset
 - `data/tracks.json` — track definitions with assigned classes (supports per-track sort overrides)
 - `data/results/{trackSlug}_{classSlug}.json` — lap time entries (driver, carModel, bestLaptime, threeConsecutiveLaps, update dates)
+- `data/imprint.json` — personal data for imprint page (name, address array, email)
 
 ## Deployment
 

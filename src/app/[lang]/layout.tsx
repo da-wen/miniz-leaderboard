@@ -4,6 +4,7 @@ import { getDictionary } from "@/lib/i18n/dictionaries";
 import { getTracks } from "@/lib/data";
 import { Sidebar } from "@/components/Sidebar";
 import { MobileNav } from "@/components/MobileNav";
+import { Footer } from "@/components/Footer";
 import { notFound } from "next/navigation";
 
 const geistSans = Geist({ subsets: ["latin"], variable: "--font-geist-sans" });
@@ -36,8 +37,9 @@ export default async function LangLayout({
             <Sidebar tracks={tracks} lang={lang} dict={dict} />
           </aside>
           <MobileNav tracks={tracks} lang={lang} dict={dict} />
-          <main className="flex-1 lg:ml-64 overflow-auto min-h-screen">
-            {children}
+          <main className="flex-1 lg:ml-64 overflow-auto min-h-screen flex flex-col">
+            <div className="flex-1">{children}</div>
+            <Footer lang={lang} dict={dict} />
           </main>
         </div>
       </body>

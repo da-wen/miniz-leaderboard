@@ -29,5 +29,13 @@
     "switch": "Language",
     "en": "English",
     "de": "Deutsch"
+  },
+  "footer": {
+    "imprint": "Legal Notice"
+  },
+  "imprint": {
+    "title": "Legal Notice",
+    "contact": "Contact",
+    "email": "Email"
   }
 }

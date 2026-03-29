@@ -29,5 +29,13 @@
     "switch": "Sprache",
     "en": "English",
     "de": "Deutsch"
+  },
+  "footer": {
+    "imprint": "Impressum"
+  },
+  "imprint": {
+    "title": "Impressum",
+    "contact": "Kontakt",
+    "email": "E-Mail"
   }
 }

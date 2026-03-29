@@ -11,6 +11,7 @@ A static leaderboard website for Mini-Z RC car racing lap times. Built with Next
 - Configurable default sort per track and class
 - Responsive design (desktop, tablet, mobile)
 - Fully static — no server or database required
+- Legal notice / Impressum page (bilingual, German + English)
 
 ## Quick Start
 
@@ -51,6 +52,7 @@ All data is stored in JSON files in the `data/` directory. No code changes neede
 data/
 ├── classes.json          # Racing class definitions (name, rules, default sort)
 ├── tracks.json           # Track definitions and class assignments
+├── imprint.json          # Personal data for imprint/legal notice page
 └── results/              # Lap time data per track + class
     ├── {track}_{class}.json
     └── ...
@@ -130,6 +132,20 @@ Default sort order can be set at two levels:
 
 Track-level overrides take priority over class-level defaults.
 
+### Imprint / Impressum
+
+The imprint page is required for sites publicly accessible under German law (DDG §5). Personal data is stored in `data/imprint.json`:
+
+```json
+{
+  "name": "Vorname Nachname",
+  "address": ["c/o Weiterleitungsservice", "Musterstraße 1", "12345 Musterstadt"],
+  "email": "kontakt@example.com"
+}
+```
+
+The page is served at `/de/impressum` (German) and `/en/impressum` (English), linked from the site footer.
+
 ## Deployment
 
 The site auto-deploys to GitHub Pages on every push to `main`.
@@ -156,9 +172,13 @@ See [deployment documentation](docs/deployment.md) for details.
 ├── data/                   # JSON data files (edit these!)
 │   ├── classes.json
 │   ├── tracks.json
+│   ├── imprint.json
 │   └── results/
 ├── src/
 │   ├── app/                # Next.js routes
+│   │   └── [lang]/
+│   │       ├── impressum/  # Bilingual imprint/legal notice page
+│   │       └── tracks/     # Track leaderboard pages
 │   ├── components/         # React components
 │   ├── lib/                # Data loading utilities
 │   └── types/              # TypeScript definitions
