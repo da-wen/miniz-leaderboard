@@ -6,20 +6,5 @@
       { "classSlug": "stock", "defaultSort": "threeConsecutiveLaps" },
       { "classSlug": "modified", "defaultSort": "threeConsecutiveLaps" }
     ]
-  },
-  {
-    "name": "Hobby Carpet",
-    "slug": "hobby-carpet",
-    "classes": [
-      { "classSlug": "stock" },
-      { "classSlug": "modified" }
-    ]
-  },
-  {
-    "name": "RCP Mini 96",
-    "slug": "rcp-mini-96",
-    "classes": [
-      { "classSlug": "stock", "defaultSort": "threeConsecutiveLaps" }
-    ]
   }
 ]
