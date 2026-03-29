@@ -14,5 +14,21 @@
     "threeConsecutiveLaps": 27.252,
     "updatedBestLaptime": null,
     "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Damian",
+    "carModel": "GL GLR",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 27.451,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-18"
+  },
+  {
+    "driver": "Ben",
+    "carModel": "MRX Master",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 34.382,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-18"
   }
 ]
