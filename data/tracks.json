@@ -2,6 +2,10 @@
   {
     "name": "Fusselflitzer Hockenheim",
     "slug": "fusselflitzer-2026-03",
+    "info": {
+      "en": "<p>The RCP layout was set up in March 2026.</p><p><b>Hockenheim</b> = Direction of travel clockwise</p>",
+      "de": "<p>Das layout des RCP wurde im März 2026 gelegt.</p><p><b>Hockenheim</b> = Fahrtrichtung im Uhrzeigersinn</p>"
+    },
     "classes": [
       { "classSlug": "stock", "defaultSort": "threeConsecutiveLaps" },
       { "classSlug": "modified", "defaultSort": "threeConsecutiveLaps" }

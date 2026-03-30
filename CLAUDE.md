@@ -29,6 +29,8 @@ Next.js 16 (App Router, static export) · React 19 · TypeScript · Tailwind CSS
 
 **HTML in rules:** The `rules` field in `classes.json` supports a subset of HTML tags (headings, lists, links, tables, inline formatting). `RulesAccordion` sanitizes via `isomorphic-dompurify` before rendering with `dangerouslySetInnerHTML`. Plain text rules continue to work as-is.
 
+**HTML in track info:** The `info` field in `tracks.json` supports the same HTML subset as rules. `TrackInfoAccordion` sanitizes via `isomorphic-dompurify` before rendering. If `info` is null/empty, the section is not displayed.
+
 **Sort priority:** Track-class override (`tracks.json`) > class default (`classes.json`) > `bestLaptime`.
 
 **Responsive layout:** Desktop uses a fixed left sidebar; mobile uses a hamburger drawer. Breakpoint at `lg`.
@@ -38,7 +40,7 @@ Next.js 16 (App Router, static export) · React 19 · TypeScript · Tailwind CSS
 ## Data Schema
 
 - `data/classes.json` — racing class definitions (name, slug, rules, defaultSort); `rules` supports HTML subset
-- `data/tracks.json` — track definitions with assigned classes (supports per-track sort overrides)
+- `data/tracks.json` — track definitions with assigned classes (supports per-track sort overrides and optional localized HTML `info`)
 - `data/results/{trackSlug}_{classSlug}.json` — lap time entries (driver, carModel, bestLaptime, threeConsecutiveLaps, update dates)
 - `data/imprint.json` — personal data for imprint page (name, address array, email)
 

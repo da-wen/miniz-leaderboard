@@ -7,6 +7,7 @@ A static leaderboard website for Mini-Z RC car racing lap times. Built with Next
 - Track-based navigation with sidebar
 - Multiple racing classes per track with tab switching
 - Expandable rules section per class
+- Collapsible track info section (optional, supports HTML)
 - Sortable leaderboard tables (by best lap time or 3 consecutive laps)
 - Configurable default sort per track and class
 - Responsive design (desktop, tablet, mobile)
@@ -51,7 +52,7 @@ All data is stored in JSON files in the `data/` directory. No code changes neede
 ```
 data/
 ├── classes.json          # Racing class definitions (name, rules, default sort)
-├── tracks.json           # Track definitions and class assignments
+├── tracks.json           # Track definitions, class assignments, and optional info
 ├── imprint.json          # Personal data for imprint/legal notice page
 └── results/              # Lap time data per track + class
     ├── {track}_{class}.json
@@ -93,6 +94,26 @@ Edit the appropriate file in `data/results/`:
    ```json
    []
    ```
+
+### Track Info
+
+Tracks can have an optional info section that appears as a collapsible accordion below the track name. The `info` field supports the same HTML tags as rules.
+
+```json
+{
+  "name": "New Track",
+  "slug": "new-track",
+  "info": {
+    "en": "<p>Indoor carpet track. Track length: ~18m.</p>",
+    "de": "<p>Indoor-Teppichstrecke. Streckenlänge: ~18m.</p>"
+  },
+  "classes": [
+    { "classSlug": "stock" }
+  ]
+}
+```
+
+If `info` is omitted or empty, no info section is displayed. Supported HTML tags are the same as for rules (see [Rules Formatting](#rules-formatting)).
 
 ### Adding a New Class
 

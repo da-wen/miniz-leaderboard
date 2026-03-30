@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
-import { getTracks, getTrackBySlug, getClasses } from "@/lib/data";
+import { getTracks, getTrackBySlug, getClasses, getLocalizedTrackInfo } from "@/lib/data";
 import { ClassTabs } from "@/components/ClassTabs";
+import { TrackInfoAccordion } from "@/components/TrackInfoAccordion";
+import { getDictionary } from "@/lib/i18n/dictionaries";
+import type { Locale } from "@/lib/i18n/config";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
@@ -35,9 +38,15 @@ export default async function TrackLayout({
     .map((tc) => allClasses.find((c) => c.slug === tc.classSlug)!)
     .filter(Boolean);
 
+  const dict = await getDictionary(lang as Locale);
+  const trackInfo = getLocalizedTrackInfo(trackSlug, lang);
+
   return (
     <div className="p-6 lg:p-8">
       <h1 className="text-2xl font-bold mb-6 text-slate-50">{track.name}</h1>
+      {trackInfo && (
+        <TrackInfoAccordion info={trackInfo} label={dict.trackInfo.label} />
+      )}
       <ClassTabs trackSlug={trackSlug} classes={trackClasses} lang={lang} />
       <div className="mt-6">{children}</div>
     </div>

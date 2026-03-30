@@ -20,6 +20,7 @@ export interface Track {
   name: string;
   slug: string;
   classes: TrackClass[];
+  info?: LocalizedText;
 }
 
 export interface LapTimeEntry {

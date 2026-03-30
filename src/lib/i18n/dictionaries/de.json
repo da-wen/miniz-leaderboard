@@ -20,6 +20,9 @@
   "rules": {
     "label": "{className} Regeln"
   },
+  "trackInfo": {
+    "label": "Streckeninfo"
+  },
   "notFound": {
     "title": "404",
     "message": "Seite nicht gefunden.",

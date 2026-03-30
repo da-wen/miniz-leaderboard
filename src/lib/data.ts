@@ -54,6 +54,16 @@ export function getLocalizedRules(classSlug: string, lang: string): string {
     ?? "";
 }
 
+export function getLocalizedTrackInfo(trackSlug: string, lang: string): string {
+  const track = getTrackBySlug(trackSlug);
+  if (!track?.info) return "";
+
+  const info = track.info;
+  return info[lang as keyof typeof info]
+    ?? info[i18n.defaultLocale as keyof typeof info]
+    ?? "";
+}
+
 export function getImprintData(): ImprintData {
   const raw = fs.readFileSync(path.join(dataDir, "imprint.json"), "utf-8");
   return JSON.parse(raw);
