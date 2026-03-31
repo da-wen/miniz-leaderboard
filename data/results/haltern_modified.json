@@ -1,0 +1,106 @@
+[
+  {
+    "driver": "Waldi",
+    "carModel": "GL GTR",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 19.341,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Burki",
+    "carModel": "?",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 19.853,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "D@niel",
+    "carModel": "GL GLR",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 20.096,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Marco",
+    "carModel": "Rima Raptor Evo",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 20.174,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Josip",
+    "carModel": "Reflex RX28",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 20.448,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Sepp",
+    "carModel": "Reflex RX28",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 20.481,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Jens",
+    "carModel": "GL GLR",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 21.291,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Damian",
+    "carModel": "GL GLR",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 21.482,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Dawen",
+    "carModel": "Damians GL GLR",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 21.686,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "David",
+    "carModel": "?",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 22.450,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "David RTA",
+    "carModel": "?",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 23.032,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Sarina",
+    "carModel": "GL GLR",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 25.197,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Dave",
+    "carModel": "?",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 31.109,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  }
+]

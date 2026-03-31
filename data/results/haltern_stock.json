@@ -1,0 +1,130 @@
+[
+  {
+    "driver": "Waldi",
+    "carModel": "GL GTR",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 20.774,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Marco",
+    "carModel": "Rima Raptor Evo",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 20.980,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Dawen",
+    "carModel": "Rima Raptor Evo",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 21.044,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Sepp",
+    "carModel": "Reflex RX28",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 21.269,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Damian",
+    "carModel": "GL GLR",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 21.515,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "D@niel",
+    "carModel": "GL GLR",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 21.854,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Jens",
+    "carModel": "GL GLR",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 22.967,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Totto",
+    "carModel": "GL GTR",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 23.017,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Markus",
+    "carModel": "?",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 23.361,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Hans",
+    "carModel": "?",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 23.664,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Jenny",
+    "carModel": "GL GLR",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 23.750,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Sarina",
+    "carModel": "GL GLR",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 24.242,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Marc",
+    "carModel": "?",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 24.495,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Dave",
+    "carModel": "?",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 26.924,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Anja",
+    "carModel": "GL GTR",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 29.896,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "HJW",
+    "carModel": "GL GTR",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 39.139,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-03-25"
+  }
+]

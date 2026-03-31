@@ -1,10 +1,34 @@
 [
   {
+    "name": "Ahaus",
+    "slug": "ahaus",
+    "info": {
+      "en": "<p><b>Direction of travel</b> =  Clockwise</p>",
+      "de": "<p><b>Fahrtrichtung</b> = Im Uhrzeigersinn</p>"
+    },
+    "classes": [
+      { "classSlug": "stock", "defaultSort": "bestLaptime" },
+      { "classSlug": "modified", "defaultSort": "bestLaptime" }
+    ]
+  },
+  {
     "name": "Fusselflitzer Hockenheim",
     "slug": "fusselflitzer-2026-03",
     "info": {
       "en": "<p>The RCP layout was set up in March 2026.</p><p><b>Hockenheim</b> = Direction of travel clockwise</p>",
       "de": "<p>Das layout des RCP wurde im März 2026 gelegt.</p><p><b>Hockenheim</b> = Fahrtrichtung im Uhrzeigersinn</p>"
+    },
+    "classes": [
+      { "classSlug": "stock", "defaultSort": "threeConsecutiveLaps" },
+      { "classSlug": "modified", "defaultSort": "threeConsecutiveLaps" }
+    ]
+  },
+  {
+    "name": "Haltern",
+    "slug": "haltern",
+    "info": {
+      "en": "<p><b>Direction of travel</b> =  Counter Clockwise</p>",
+      "de": "<p><b>Fahrtrichtung</b> = Gegen den Uhrzeigersinn</p>"
     },
     "classes": [
       { "classSlug": "stock", "defaultSort": "threeConsecutiveLaps" },
