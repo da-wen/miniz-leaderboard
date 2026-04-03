@@ -35,9 +35,9 @@
     "driver": "Damian",
     "carModel": "GL GLR",
     "bestLaptime": null,
-    "threeConsecutiveLaps": 21.515,
+    "threeConsecutiveLaps": 21.219,
     "updatedBestLaptime": null,
-    "updatedThreeConsecutiveLaps": "2026-03-25"
+    "updatedThreeConsecutiveLaps": "2026-04-03"
   },
   {
     "driver": "Josip",
@@ -126,6 +126,14 @@
     "threeConsecutiveLaps": 29.896,
     "updatedBestLaptime": null,
     "updatedThreeConsecutiveLaps": "2026-03-25"
+  },
+  {
+    "driver": "Rainer",
+    "carModel": "GL GLR",
+    "bestLaptime": null,
+    "threeConsecutiveLaps": 38.654,
+    "updatedBestLaptime": null,
+    "updatedThreeConsecutiveLaps": "2026-04-03"
   },
   {
     "driver": "HJW",
