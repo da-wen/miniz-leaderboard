@@ -1,10 +1,18 @@
 [
   {
+    "driver": "Waldi",
+    "carModel": "GL GTR",
+    "bestLaptime": 7.587,
+    "threeConsecutiveLaps": 23.289,
+    "updatedBestLaptime": "2026-04-15",
+    "updatedThreeConsecutiveLaps": "2026-04-15"
+  },
+  {
     "driver": "Totto",
     "carModel": "GL GTR",
-    "bestLaptime": 8.426,
-    "threeConsecutiveLaps": 26.143,
+    "bestLaptime": 8.238,
+    "threeConsecutiveLaps": 25.424,
     "updatedBestLaptime": "2026-03-25",
-    "updatedThreeConsecutiveLaps": null
+    "updatedThreeConsecutiveLaps": "2026-04-15"
   }
 ]
