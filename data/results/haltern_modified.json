@@ -16,6 +16,14 @@
     "updatedThreeConsecutiveLaps": "2026-03-25"
   },
   {
+    "driver": "Dawen",
+    "carModel": "Rima Raptor Evo",
+    "bestLaptime": 6.455,
+    "threeConsecutiveLaps": 19.928,
+    "updatedBestLaptime": "2026-04-19",
+    "updatedThreeConsecutiveLaps": "2026-04-19"
+  },
+  {
     "driver": "D@niel",
     "carModel": "GL GLR",
     "bestLaptime": null,
@@ -64,14 +72,6 @@
     "updatedThreeConsecutiveLaps": "2026-04-09"
   },
   {
-    "driver": "Dawen",
-    "carModel": "Damians GL GLR",
-    "bestLaptime": null,
-    "threeConsecutiveLaps": 21.686,
-    "updatedBestLaptime": null,
-    "updatedThreeConsecutiveLaps": "2026-03-25"
-  },
-  {
     "driver": "David",
     "carModel": "?",
     "bestLaptime": null,
@@ -91,7 +91,7 @@
     "driver": "Sarina",
     "carModel": "GL GLR",
     "bestLaptime": null,
-    "threeConsecutiveLaps": 25.197,
+    "threeConsecutiveLaps": 23.791,
     "updatedBestLaptime": null,
     "updatedThreeConsecutiveLaps": "2026-03-25"
   },
