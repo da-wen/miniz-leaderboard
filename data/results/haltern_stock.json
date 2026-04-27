@@ -19,9 +19,9 @@
     "driver": "Dawen",
     "carModel": "Rima Raptor Evo",
     "bestLaptime": null,
-    "threeConsecutiveLaps": 21.044,
+    "threeConsecutiveLaps": 20.743,
     "updatedBestLaptime": null,
-    "updatedThreeConsecutiveLaps": "2026-03-25"
+    "updatedThreeConsecutiveLaps": "2026-04-26"
   },
   {
     "driver": "Sepp",
@@ -139,8 +139,8 @@
     "driver": "HJW",
     "carModel": "GL GTR",
     "bestLaptime": null,
-    "threeConsecutiveLaps": 38.1324,
+    "threeConsecutiveLaps": 34.366,
     "updatedBestLaptime": null,
-    "updatedThreeConsecutiveLaps": "2026-03-25"
+    "updatedThreeConsecutiveLaps": "2026-04-26"
   }
 ]
