@@ -11,8 +11,16 @@
     "driver": "Totto",
     "carModel": "GL GTR",
     "bestLaptime": 8.238,
-    "threeConsecutiveLaps": 25.424,
+    "threeConsecutiveLaps": 25.323,
     "updatedBestLaptime": "2026-03-25",
     "updatedThreeConsecutiveLaps": "2026-04-15"
+  },
+  {
+    "driver": "Dawen",
+    "carModel": "Rima Raptor Evo",
+    "bestLaptime": 8.392,
+    "threeConsecutiveLaps": 25.632,
+    "updatedBestLaptime": "2026-05-06",
+    "updatedThreeConsecutiveLaps": "2026-05-06"
   }
 ]
